@@ -1,4 +1,4 @@
-# Eigene Ideen, Konzepte, Methoden
+# Methodology
 
 <!--
 *   Darstellung der eigenen Ideen und Konzepte zur Lösung der Fragestellung

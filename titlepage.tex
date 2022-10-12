@@ -1,5 +1,7 @@
 
 %------------------------------------- Custom Title Page ---------------------------
+\usepackage{graphicx}
+
 \renewcommand{\maketitle}{
 \thispagestyle{empty}
 
@@ -7,10 +9,9 @@
 \begin{center}
     \Large
     \textsc{
-        Fachhochschule Bielefeld\\
-        Fachbereich Campus Minden\\
+        Otto-Friedrich-Universität Bamberg\\
         \vspace{\baselineskip}\noindent
-        Studiengang Informatik
+        Information Systems
     }
 \end{center}
 
@@ -34,18 +35,27 @@ $if(subtitle)$
 \end{center}
 $endif$
 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=10cm]{figs/logo_bamberg.png}
+\end{figure}
+
+
 \vfill
 
 \vspace{\baselineskip}\noindent
 \large
 \begin{tabular}{lp{\textwidth}}
-    vorgelegt von: & \texttt{$for(author)$$author$$sep$ \and $endfor$}\\
-    Matrikelnummer: & \texttt{$studentnumber$} \\
+    Author: & \texttt{$for(author)$$author$$sep$ \and $endfor$}\\
+    Student ID: & \texttt{$studentnumber$} \\
     &\\[12pt]
-    Abgabe am: & \texttt{$date$}\\
+    Date: & \texttt{$date$}\\
     &\\[24pt]
-    Erstprüfer/in: & \texttt{$reviewer1$}\\
-    Zweitprüfer/in: & \texttt{$reviewer2$}
+    Thesis advisor: & \texttt{$reviewer1$}\\
+    $if(reviewer2)$
+    Thesis advisor: & \texttt{$reviewer2$}
+    $endif$
 \end{tabular}
 }
 %------------------------------------- Custom Title Page ---------------------------

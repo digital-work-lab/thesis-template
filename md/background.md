@@ -1,4 +1,4 @@
-# Stand der Technik/Forschung, vergleichbare Arbeiten
+# Background
 
 <!--
 *   Darstellung relevanter Ansätze aus der Praxis bzw. Forschung

@@ -1,4 +1,4 @@
-# Realisierung, Evaluation
+# Results
 
 <!--
 *   Beschreibung der Umsetzung des Lösungskonzepts

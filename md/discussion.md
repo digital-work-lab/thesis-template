@@ -1,4 +1,4 @@
-# Conclusion
+# Discussion
 
 <!--
 *   Fazit: Vergleich mit der ursprünglichen Zielsetzung (komprimiert/zusammengefasst)

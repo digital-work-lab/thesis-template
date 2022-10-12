@@ -20,10 +20,11 @@ PANDOC                 ?= docker run --rm -v $(WORKDIR):/pandoc pandoc-thesis pa
 ## (Adjust to your needs. Order of markdown files in $(SRC) matters!)
 META                    = md/metadata.yaml
 
-SRC                     = md/introduction.md       \
-                          md/relatedwork.md        \
-                          md/concept.md            \
-                          md/realisation.md        \
+SRC                     = md/introduction.md     \
+                          md/background.md       \
+                          md/methodology.md      \
+                          md/results.md          \
+                          md/discussion.md       \
                           md/conclusion.md
 
 BIBFILE                 = references.bib
@@ -71,12 +72,14 @@ OPTIONS                += --include-after-body=$(TMP3)
 OPTIONS                += --citeproc
 OPTIONS                += -M bibliography=$(BIBFILE)
 OPTIONS                += -M link-citations=true
+
 ## download from https://www.zotero.org/styles
 ## cf. https://pandoc.org/MANUAL.html#citations
 #OPTIONS                += --csl=chicago-author-date-de.csl
 #OPTIONS                += --csl=chicago-note-bibliography.csl
 #OPTIONS                += --csl=ieee.csl
 #OPTIONS                += --csl=oxford-university-press-note.csl
+OPTIONS                += --csl=apa.csl
 
 OPTIONS                += --listings
 

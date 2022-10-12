@@ -1,3 +1,4 @@
+\renewcaptionname{ngerman}{\contentsname}{Table of contents}
 
 %------------------------------------- Custom Title (Back) Page --------------------
 $if(cleanthesis)$
@@ -9,13 +10,9 @@ $endif$
 
 
 %------------------------------------- Custom Abstract Page ------------------------
-$if(abstract-de)$
+
 \cleardoublepage
 \begin{minipage}{\linewidth}
-
-\chapter*{Zusammenfassung}
-%\addcontentsline{toc}{chapter}{Zusammenfassung}
-$abstract-de$
 
 $if(abstract-en)$
 \chapter*{Abstract}
@@ -25,7 +22,7 @@ $endif$
 
 \end{minipage}
 \cleardoublepage
-$endif$
+
 %------------------------------------- Custom Abstract Page ------------------------
 
 
@@ -38,14 +35,6 @@ $acknowledgements$
 $endif$
 %------------------------------------- Acknowledgements Page -----------------------
 
-
-
-%------------------------------------- Restriction Note Page -----------------------
-$if(restrictionnote)$
-\chapter*{Sperrvermerk}
-$restrictionnote$
-$endif$
-%------------------------------------- Restriction Note Page -----------------------
 
 
 
