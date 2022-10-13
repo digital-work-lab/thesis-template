@@ -2,9 +2,13 @@
 
 This repository contains a markdown template for theses and seminar papers. For simplicity, we refer to theses exclusively, but the guidelines also apply to seminar papers. Below you can find guidelines realted to the different aspects of a thesis.
 
-Q: Why use markdown?
+If needed, a Word template can be made available upon request.
 
-A: Because it is super easy and powerful. The future of academic publishing.
+# Markdown: Why and how?
+
+**Q:** Why use markdown?
+
+**A:** Because it is super easy and powerful. The future of academic publishing.
 
 - You can focus on contents, format automatically and at the end (save effort)
 - It easily converts your work into multiple formats (e.g., docx, pdf), using pandoc and templates.
@@ -14,9 +18,9 @@ A: Because it is super easy and powerful. The future of academic publishing.
 - It is cross-plattform, avaliable on Windows, Mac, Linux.
 - There are no lock-in issues like in proprietary tools.
 
-Q: How to setup markdown?
+**Q:** How to setup markdown?
 
-A: Install and build Docker, use a markdown editor and this template repository.
+**A:** Install and build Docker, use a markdown editor and this template repository.
 
 1.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
 2.  Build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
@@ -25,33 +29,19 @@ A: Install and build Docker, use a markdown editor and this template repository.
     - [Panwriter](https://panwriter.com/) is the easiest cross-platform option. Please make sure to install pandoc (as stated on the panwriter website).
     - Of course, you can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)), or even [manubot](https://manubot.org/) ([1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
 
-4.  Build the manuscript: `make simple`
+**Q:** How to write your thesis with markdown?
 
-
-Q: How to write your thesis with markdown?
+**A:** Follow these steps:
 
 1.  Maintain your references in [`references.bib`](references.bib)
 2.  Put the title of your thesis, your name and other meta information in [`md/metadata.yaml`](md/metadata.yaml)
-3.  Adjust optional definitions in [`md/metadata.yaml`](md/metadata.yaml) to your needs:
-    -   Disable extras like `abstract-*` or `acknowledgements` or `restrictionnote`: Remove or comment this optional definitions
-    -   Modify content (text) of optional definitions like `abstract-*` or `acknowledgements` or `restrictionnote`
-    -   If you like Eisvogel but want a more useful`^W`conventional page header (i.e. chapter/section instead of the thesis title) activate (i.e. remove comment in front of) `headeralternative`
+3.  Adjust optional definitions in [`md/metadata.yaml`](md/metadata.yaml) to your needs
 4.  Fill the markdown files under [`md/`](md) with your content
-    *   The default files in the folder [`md/`](md) correspond to a typical structure of a scientific thesis (see also
-        `@Balzert2017`: *Balzert et al.* "Wissenschaftliches Arbeiten", Springer, 2017). You can just use this as starting
-        point for your work ...  *Hint*: You will find some help regarding the use of Markdown in
-        [`md/introduction.md`](md/introduction.md) as well as typical number of pages for each chapter in the comment section
-        of each file.
-    *   In case you see need for an other layout, please do not forget to reflect the changed filenames in [`Makefile`](Makefile).
-5.  Pandoc uses per default the *Chicago Manual of Style* for citations (cf. [pandoc.org/MANUAL.html#citations](https://pandoc.org/MANUAL.html#citations)).
-    You can search [zotero.org/styles](https://www.zotero.org/styles) or [editor.citationstyles.org/searchByName](https://editor.citationstyles.org/searchByName/)
-    for alternative style definitions, download the corresponding `.csl` file to your project folder and activate the style in the
-    [`Makefile`](Makefile) (option `--csl=XXX.csl`).
-6.  Build the thesis:
+    *   Examples for citations, figures, tables, formulas, and code are in [`md/appendix.md`](md/appendix.md)
+    *   If you change filenames, also update them in the Makefile
+5.  Build the thesis:
     *   Using the simple layout: `make simple`
-    *   Using Eisvogel: `make eisvogel`
-    *   Using Clean Thesis: `make cleanthesis`
-7.  Clean up:
+6.  Clean up:
     *   To remove temporary (generated) filed: `make clean`
     *   To also remove the generated thesis (PDF): `make distclean`
 
