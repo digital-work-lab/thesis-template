@@ -1,8 +1,8 @@
 # Markdown template for theses and seminar papers
 
-This repository contains a markdown template for theses and seminar papers. For simplicity, we refer to theses exclusively, but the guidelines also apply to seminar papers. Below you can find guidelines realted to the different aspects of a thesis.
+This repository contains a markdown template for theses and seminar papers. For simplicity, we refer to theses exclusively, but the guidelines also apply to seminar papers. Below you can find guidelines related to the different aspects of a thesis.
 
-If needed, a Word template can be made available upon request.
+We recommend using the markdown template, but a Word template can also be made available upon request.
 
 # Markdown: Why and how?
 
@@ -10,21 +10,22 @@ If needed, a Word template can be made available upon request.
 
 **A:** Because it is super easy and powerful. The future of academic publishing.
 
-- You can focus on contents, format automatically and at the end (save effort)
-- It easily converts your work into multiple formats (e.g., docx, pdf), using pandoc and templates.
-- Compatible with all reference managers (e.g., Zotero, Endnote, Jabref, ...).
-- It uses csl, giving you acces to more than 9.000 citation styles.
-- It works with git, allowing you to keep transparent versionsand to collaborate.
-- It is cross-plattform, avaliable on Windows, Mac, Linux.
-- There are no lock-in issues like in proprietary tools.
+- You can focus on contents and format automatically at the end (save effort)
+- Pandoc and templates easily convert your work into multiple formats (e.g., docx, pdf)
+- Based on csl, giving you access to more than 9,000 citation styles
+- Compatible with all reference managers (e.g., Zotero, Endnote, Jabref, ...)
+- Works with git, allowing you to keep transparent versions and to collaborate
+- Cross-platform, available on Windows, Mac, Linux
+- There are no lock-in issues like in proprietary tools
 
 **Q:** How to setup markdown?
 
 **A:** Install and build Docker, use a markdown editor and this template repository.
 
-1.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
-2.  Build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
-3.  Use a markdown editor:
+1.  Download this repository: `git clone https://gitlab.rz.uni-bamberg.de/gerit.wagner/thesis-template && cd thesis-template`
+2.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
+3.  Build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
+4.  Use a markdown editor:
 
     - [Panwriter](https://panwriter.com/) is the easiest cross-platform option. Please make sure to install pandoc (as stated on the panwriter website).
     - Of course, you can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)), or even [manubot](https://manubot.org/) ([1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
@@ -36,7 +37,7 @@ If needed, a Word template can be made available upon request.
 1.  Maintain your references in [`references.bib`](references.bib)
 2.  Put the title of your thesis, your name and other meta information in [`md/metadata.yaml`](md/metadata.yaml)
 3.  Adjust optional definitions in [`md/metadata.yaml`](md/metadata.yaml) to your needs
-4.  Fill the markdown files under [`md/`](md) with your content
+4.  Develop your content in the markdown files under [`md/`](md)
     *   Examples for citations, figures, tables, formulas, and code are in [`md/appendix.md`](md/appendix.md)
     *   If you change filenames, also update them in the Makefile
 5.  Build the thesis:
@@ -45,7 +46,7 @@ If needed, a Word template can be made available upon request.
     *   To remove temporary (generated) filed: `make clean`
     *   To also remove the generated thesis (PDF): `make distclean`
 
-The above mentioned files constitute a minimal working example. To start your own project, simply clone this project and customize
+The above-mentioned files constitute a minimal working example. To start your own project, simply clone this project and customize
 the files mentioned above.
 
 # Structure of a thesis
@@ -85,11 +86,11 @@ The methodology section describes a systematic and goal-oriented approach to ans
 
 ## Results
 
-In this section the author presents the results of the study. In case they are presented by means of figures and/or tables, the results should be clearly legible. Furthermore, in the case of figures, it is recommended to use vector graphics as this ensures good readability without the need to pre-specify the font size within the figures. An example figure and table can be found in the template contained in this repository.
+In this section, the author presents the results of the study. In case they are presented by means of figures and/or tables, the results should be clearly legible. Furthermore, in the case of figures, it is recommended to use vector graphics as this ensures good readability without the need to pre-specify the font size within the figures. An example figure and table can be found in the template contained in this repository.
 
 ## Discussion
 
-In this section the author provides a discussion of the results and is thus able to draw an informed conclusion. More precisely, the discussion is an evaluative summary of the research study in relation to the research question. In general, the discussion can be divided in three parts. First, the results should be tied to the research question, thus presenting the reader a solution or improvement to the identified problem space. Here, for example, the author can draw on empirical findings introduced in the Results section to support his or her argument. Next, the author should outline the limitations of the research study by critically examining the used research approach. Limitations might comprise, for example, a limited time frame considered in the research study, or the individual refinement of a specific research method due to time constraints. Finally, suggestions for future research avenues should be provided. These suggestions may be in line with the limitations, as this allows other researchers to build on the present work by extending or analyzing it. In summary, the Discussion section presents the results in relation to the research question as well as restrictions of the study and suggestions for future research in the respective domain.
+In this section, the author provides a discussion of the results and is thus able to draw an informed conclusion. More precisely, the discussion is an evaluative summary of the research study in relation to the research question. In general, the discussion can be divided in three parts. First, the results should be tied to the research question, thus presenting the reader a solution or improvement to the identified problem space. Here, for example, the author can draw on empirical findings introduced in the Results section to support his or her argument. Next, the author should outline the limitations of the research study by critically examining the used research approach. Limitations might comprise, for example, a limited time frame considered in the research study, or the individual refinement of a specific research method due to time constraints. Finally, suggestions for future research avenues should be provided. These suggestions may be in line with the limitations, as this allows other researchers to build on the present work by extending or analyzing it. In summary, the Discussion section presents the results in relation to the research question as well as restrictions of the study and suggestions for future research in the respective domain.
 
 ## Conclusion
 
@@ -99,7 +100,7 @@ The conclusion contains a summary of the research study. In contrast to the Disc
 
 ## Submission
 
-When submitting the thesis make sure to
+When submitting the thesis, make sure to
 - include the data and the code for your analyses in a digital appendix
 - provide PDFs of the papers you cited (if possible)
 - send the source files (markdown, references.bib) and a PDF version of the thesis to your supervisor via e-mail.
