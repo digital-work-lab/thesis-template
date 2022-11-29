@@ -6,7 +6,7 @@ References are automatically generated from the BibTex file (references.bib)
 ... which you should create/maintain using a reference manager.
 -->
 
-# Literatur {.unnumbered}
+# References {.unnumbered}
 
 \markboth{Literatur}{Literatur}
 

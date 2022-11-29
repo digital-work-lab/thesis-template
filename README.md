@@ -15,7 +15,7 @@ We recommend using the markdown template, but a Word template can also be made a
 - Based on csl, giving you access to more than 9,000 citation styles
 - Compatible with all reference managers (e.g., Zotero, Endnote, Jabref, ...)
 - Works with git, allowing you to keep transparent versions and to collaborate
-- Cross-platform, available on Windows, Mac, Linux
+- Cross-platform, available on Windows (via [WSL](https://learn.microsoft.com/de-de/training/modules/get-started-with-windows-subsystem-for-linux/2-enable-and-install)), Mac, Linux
 - There are no lock-in issues like in proprietary tools
 
 **Q:** How to setup markdown?
