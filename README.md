@@ -27,7 +27,7 @@ We recommend using the markdown template, but a Word template can also be made a
 3.  Build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
 4.  Use a markdown editor:
 
-    - aou can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)), or even [manubot](https://manubot.org/) ([1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
+    - You can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)), or even [manubot](https://manubot.org/) ([1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
 
 **Q:** How to write your thesis with markdown?
 
