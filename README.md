@@ -8,34 +8,38 @@ We recommend using the markdown template, but a Word template can also be made a
 
 **Q:** Why use markdown?
 
-**A:** Because it is super easy and powerful. The future of academic publishing.
+**A:** Because it is super easy and powerful. The future of academic publishing (see [manubot](https://manubot.org/), [1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
 
 - You can focus on contents and format automatically at the end (save effort)
 - Pandoc and templates easily convert your work into multiple formats (e.g., docx, pdf)
 - Based on csl, giving you access to more than 9,000 citation styles
 - Compatible with all reference managers (e.g., Zotero, Endnote, Jabref, ...)
 - Works with git, allowing you to keep transparent versions and to collaborate
-- Cross-platform, available on Windows (via [WSL](https://learn.microsoft.com/de-de/training/modules/get-started-with-windows-subsystem-for-linux/2-enable-and-install)), Mac, Linux
+- Cross-platform, available on Linux, Windows, Mac
 - There are no lock-in issues like in proprietary tools
 
 **Q:** How to setup markdown?
 
 **A:** Install and build Docker, use a markdown editor and this template repository.
 
-1.  Download this repository: `git clone https://gitlab.rz.uni-bamberg.de/gerit.wagner/thesis-template && cd thesis-template`
-2.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
-3.  Build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
-4.  Use a markdown editor:
+On Windows, it is recommended to use the [WSL](https://learn.microsoft.com/de-de/training/modules/get-started-with-windows-subsystem-for-linux/2-enable-and-install), e.g., Ubuntu. Run the following commands in the WSL shell. Install make (`apt-get install make`).
 
-    - You can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)), or even [manubot](https://manubot.org/) ([1](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007128)).
+1.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
+2.  Download this repository: `git clone https://gitlab.rz.uni-bamberg.de/gerit.wagner/thesis-template`
+3.  Navigate to the repository (`cd thesis-template`) and build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
+4.  Use a markdown editor to edit the markdown documents:
+
+    - You can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)).
 
 **Q:** How to write your thesis with markdown?
 
 **A:** Follow these steps:
 
-1.  Maintain your references in [`references.bib`](references.bib)
+Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.com/en-us/windows/wsl/filesystems) in the Windows File explorer.
+
+1.  Add your references to [`references.bib`](references.bib)
 2.  Put the title of your thesis, your name and other meta information in [`md/metadata.yaml`](md/metadata.yaml)
-3.  Adjust optional definitions in [`md/metadata.yaml`](md/metadata.yaml) to your needs
+3.  Adjust optional definitions in [`md/metadata.yaml`](md/metadata.yaml)
 4.  Develop your content in the markdown files under [`md/`](md)
     *   Examples for citations, figures, tables, formulas, and code are in [`md/appendix.md`](md/appendix.md)
     *   If you change filenames, also update them in the Makefile
