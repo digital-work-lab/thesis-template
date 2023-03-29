@@ -31,6 +31,12 @@ On Windows, it is recommended to use the [WSL](https://learn.microsoft.com/de-de
 
     - You can use any other markdown editor, including [visual code](https://code.visualstudio.com/) (e.g., with the [citer plugin](https://marketplace.visualstudio.com/items?itemName=notZaki.pandocciter)).
 
+Note: On a Mac, line 9 of the docker/dockerfile.df should be replaced by
+
+```
+ARG PANDOCDEB=https://github.com/jgm/pandoc/releases/download/2.11.4/pandoc-2.11.4-1-arm64.deb
+```
+
 **Q:** How to write your thesis with markdown?
 
 **A:** Follow these steps:
