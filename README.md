@@ -60,7 +60,7 @@ the files mentioned above.
 
 # Structure of a thesis
 
-The default structure outlined below may need to be adapted to the thesis. It is recommended to use "We" instead of passive voice (commonly used in German).
+The default structure outlined below may need to be adapted to the thesis. It is recommended to use active voice ("I" or "We") instead of passive voice (commonly used in German).
 
 ## Abstract
 
