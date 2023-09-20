@@ -25,7 +25,7 @@ We recommend using the markdown template, but a Word template can also be made a
 On Windows, it is recommended to use the [WSL](https://learn.microsoft.com/de-de/training/modules/get-started-with-windows-subsystem-for-linux/2-enable-and-install), e.g., Ubuntu. Run the following commands in the WSL shell. Install make (`apt-get install make`).
 
 1.  Install docker from <https://hub.docker.com/search/?type=edition&offering=community>
-2.  Download this repository: `git clone https://gitlab.rz.uni-bamberg.de/gerit.wagner/thesis-template`
+2.  Download this repository: `git clone https://github.com/digital-work-lab/thesis-template`
 3.  Navigate to the repository (`cd thesis-template`) and build docker image containing all dependencies, e.g. pandoc and TeX Live: `make docker`
 4.  Use a markdown editor to edit the markdown documents:
 
