@@ -13,12 +13,15 @@ keywords: [Markdown, Example]
 ### activate (i.e. uncomment the next line) "headeralternative" to use chapter/section in header instead of title
 headeralternative: true
 
+thesis_type: "Bachelor's thesis"
 studentnumber: "12345678"
 date: "1. Oktober 2022"
 
 reviewer1:  "Prof. Dr. Gerit Wagner"
 # reviewer2:  "XXX, Wuppie GmbH"
 
+degree_program: "Wirtschaftsinformatik"
+department: "Faculty Information Systems and Applied Computer Sciences"
 
 abstract-en: |
   The abstract.
@@ -32,6 +35,6 @@ abstract-en: |
 ## mandatory
 declaration: |
 
-  **Hinweis: Hier ist die vom Prüfunsamt zur Verfügung gestellte Erklärung (inkl. zutreffende APO und Art der Arbeit) einzufügen. Diese ist dem Word-Dokument (... Thema-Bestätigung.docx) zu entnehmen.**
+  **Hinweis: Hier ist die vom Prüfungsamt zur Verfügung gestellte Erklärung (inkl. zutreffende APO und Art der Arbeit) einzufügen. Diese ist dem Word-Dokument (... Thema-Bestätigung.docx) zu entnehmen.**
 
 ---
