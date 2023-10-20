@@ -87,6 +87,20 @@ bar & bar & bar & bar \tabularnewline
 \bottomrule
 \end{longtable}
 
+Eine weitere Option sind 
+
+```table
+---
+caption: 'Table example'
+alignment: LL
+table-width: 1.0
+width: [0.5, 0.5]
+markdown: True
+---
+
+Concept,References
+
+```
 
 ## Querverweise
 

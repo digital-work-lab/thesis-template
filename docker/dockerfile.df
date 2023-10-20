@@ -20,6 +20,7 @@ RUN apt-get update                                                          \
         texlive-bibtex-extra texlive-lang-english texlive-lang-german       \
         texlive-font-utils texlive-fonts-recommended texlive-fonts-extra    \
         fontconfig lmodern ghostscript gsfonts cm-super librsvg2-bin        \
+        python3-pip                                                         \
     #
     # Pandoc
     && wget $PANDOCDEB && dpkg -i pandoc* && rm pandoc*                     \
@@ -35,6 +36,8 @@ RUN apt-get update                                                          \
     #
     # Clean-Up
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/*
+
+RUN python3 -m pip install --break-system-packages pantable
 
 # Set working directory
 WORKDIR /pandoc
