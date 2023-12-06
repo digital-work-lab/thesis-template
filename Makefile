@@ -63,7 +63,7 @@ OPTIONS                 = -f markdown
 OPTIONS                += --pdf-engine=pdflatex
 OPTIONS                += --standalone
 
-OPTIONS                += -M lang=de-DE
+OPTIONS                += -M lang=en-US
 OPTIONS                += --metadata-file=$(META)
 
 OPTIONS                += --include-in-header=$(TMP1)
