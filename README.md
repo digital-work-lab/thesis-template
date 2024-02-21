@@ -2,8 +2,6 @@
 
 This repository contains a markdown template for theses and seminar papers. For simplicity, we refer to theses exclusively, but the guidelines also apply to seminar papers. Below you can find guidelines related to the different aspects of a thesis.
 
-We recommend using the markdown template, but a Word template can also be made available upon request.
-
 # Markdown: Why and how?
 
 **Q:** Why use markdown?
@@ -55,8 +53,11 @@ Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.co
     *   To remove temporary (generated) filed: `make clean`
     *   To also remove the generated thesis (PDF): `make distclean`
 
-The above-mentioned files constitute a minimal working example. To start your own project, simply clone this project and customize
-the files mentioned above.
+**Q:** How to add new latex packages?
+
+**A:** Follow these steps:
+
+Latex packages can be added to the `titlepage.tex` using the `\usepackage{package-name}` command.
 
 # General information
 
@@ -66,16 +67,6 @@ When submitting the thesis, make sure to
 - include the data and the code for your analyses in a digital appendix
 - provide PDFs of the papers you cited (if possible)
 - send the source files (markdown, references.bib) and a PDF version of the thesis to your supervisor via e-mail.
-
-## Pre-Submission Checklist
-
-- [ ] For (regression) models, the model formulas are provided.
-- [ ] Every figure and table is referenced and described in the text.
-- [ ] Choose appropriate formatting of numbers that does not suggest unjustified levels of accuracy (e.g., response times of employees in ms).
-- [ ] If feasible, arrange rows/columns/bars in an order of numerical progression; always indicate what numbers are shown, including units (axes, legends).
-- [ ] Provide complete reference information in the reference section (e.g., including Authors, Title, Journal, Volume, Issue).
-- [ ] Keep in mind that claims of significance require appropriate statistical tests.
-- [ ] The writing style should be objective and neutral, in particular in the related work, methodology, and results sections. Clearly indicate when you go beyond the data and develop your own interpretation (e.g., in the form of propositions).
 
 # References
 
