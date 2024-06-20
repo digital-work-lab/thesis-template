@@ -3,7 +3,4 @@
 SOCKET_GID=$(stat -c '%g' /var/run/docker.sock)
 groupmod -g $SOCKET_GID docker
 
-docker pull pandoc/latex:3.1
-docker pull lfoppiano/grobid:0.7.3
-
 exec "$@"
