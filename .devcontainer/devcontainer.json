@@ -17,7 +17,6 @@
     },
     "vscode": {
       "extensions": [
-        "streetsidesoftware.code-spell-checker",
         "markdown.showPreview",
         "mhutchie.git-graph",
         "mathematic.vscode-pdf",
