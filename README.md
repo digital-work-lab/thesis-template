@@ -32,7 +32,7 @@ On Windows, it is recommended to use the [WSL](https://learn.microsoft.com/de-de
 Note: On a Mac, line 9 of the docker/dockerfile.df should be replaced by
 
 ```
-ARG PANDOCDEB=https://github.com/jgm/pandoc/releases/download/2.11.4/pandoc-2.11.4-1-arm64.deb
+ARG PANDOCDEB=https://github.com/jgm/pandoc/releases/download/2.18/pandoc-2.18-1-arm64.deb
 ```
 
 **Q:** How to write your thesis with markdown?
