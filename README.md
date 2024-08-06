@@ -59,6 +59,15 @@ Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.co
 
 Latex packages can be added to the `titlepage.tex` using the `\usepackage{package-name}` command.
 
+**Q:** I have cited a paper in a figure or table. How can I include the reference in the bibliography section?
+
+**A:**: Add the following command with corresponding paper IDs (citation_keys) to the 'md/metadata.yaml` file:
+
+```
+nocite: |
+  @paper_id1,@paper_id2
+```
+
 # General information
 
 ## Submission
