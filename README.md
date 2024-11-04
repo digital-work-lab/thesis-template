@@ -59,6 +59,10 @@ Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.co
 
 Latex packages can be added to the `titlepage.tex` using the `\usepackage{package-name}` command.
 
+**Q:** How do I adjust the title page (if contents are printed on page 2)?
+
+**A:** Adjust the `vspace`s in `titlepage.tex`.
+
 **Q:** I have cited a paper in a figure or table. How can I include the reference in the bibliography section?
 
 **A:**: Add the following command with corresponding paper IDs (citation_keys) to the 'md/metadata.yaml` file:
