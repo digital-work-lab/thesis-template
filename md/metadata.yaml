@@ -13,7 +13,7 @@ keywords: [Markdown, Example]
 ### activate (i.e. uncomment the next line) "headeralternative" to use chapter/section in header instead of title
 headeralternative: true
 
-thesis_type: "Bachelor's thesis"
+thesis_type: "Bachelor's Thesis"
 studentnumber: "12345678"
 date: "1. Oktober 2022"
 
