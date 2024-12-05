@@ -48,7 +48,7 @@ Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.co
     *   Examples for citations, figures, tables, formulas, and code are in [`md/appendix.md`](md/appendix.md)
     *   If you change filenames, also update them in the Makefile
 5.  Build the thesis:
-    *   Using the simple layout: `make simple`
+    *   Run `make pdf`
 6.  Clean up:
     *   To remove temporary (generated) filed: `make clean`
     *   To also remove the generated thesis (PDF): `make distclean`

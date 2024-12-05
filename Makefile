@@ -134,8 +134,8 @@ TEMPLATE_FILES          = $(EISVOGEL_TEMPLATE) $(CLEANTHESIS_TEMPLATE)
 ###############################################################################
 
 
-## Simple book layout
-simple: $(TARGET)
+## pdf book layout
+pdf: $(TARGET)
 
 
 ## Use Eisvogel template (https://github.com/Wandmalfarbe/pandoc-latex-template)
@@ -208,4 +208,4 @@ $(TMP): __%.filled.tex: %.tex $(META)
 ###############################################################################
 
 
-.PHONY: simple eisvogel cleanthesis docker clean distclean
+.PHONY: pdf eisvogel cleanthesis docker clean distclean
