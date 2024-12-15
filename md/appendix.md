@@ -1,13 +1,5 @@
 # Appendix
 
-<!--
-Platz für *wichtige* Materialien, die zu umfangreich für den eigentlichen Textteil sind.
-
-Der Anhang gehört *nicht* zum Textteil (wird nicht zum Seitenumfang hinzugerechnet).
-Der Umfang des Anhangs sollte möglichst klein sein!
--->
-
-
 ## Markdown und -Erweiterungen durch Pandoc
 
 Für eine Einführung in (Pandoc-) Markdown vgl. [pandoc.org/MANUAL.html](https://pandoc.org/MANUAL.html).
