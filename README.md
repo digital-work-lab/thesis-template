@@ -78,8 +78,6 @@ nocite: |
 
 When submitting the thesis, make sure to
 - include the data and the code for your analyses in a digital appendix
-- provide PDFs of the papers you cited (if possible)
-- send the source files (markdown, references.bib) and a PDF version of the thesis to your supervisor via e-mail.
 
 # References
 
