@@ -72,6 +72,10 @@ nocite: |
   @paper_id1,@paper_id2
 ```
 
+**Q:** How do I include a list of abbreviations, tables, and figures?
+
+**A:**: Lists of abbreviations, tables, and figures are not required. Define abbreviations the first time you use them and make sure to reference all figures and tables in the text.
+
 # General information
 
 ## Submission
