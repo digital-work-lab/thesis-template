@@ -57,7 +57,7 @@ Note: on Windows/WSL, files are available at [\\wsl$](https://learn.microsoft.co
 
 **A:** Follow these steps:
 
-Latex packages can be added to the `titlepage.tex` using the `\usepackage{package-name}` command.
+Latex packages can be added to the `include-header.tex` using the `\usepackage{package-name}` command.
 
 **Q:** How do I adjust the title page (if contents are printed on page 2)?
 
