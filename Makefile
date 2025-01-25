@@ -88,7 +88,7 @@ OPTIONS                += -V documentclass=scrbook
 OPTIONS                += -V papersize=a4
 OPTIONS                += -V fontsize=11pt
 
-OPTIONS                += -V classoption:open=right
+OPTIONS                += -V classoption:open=any
 OPTIONS                += -V classoption:twoside=true
 OPTIONS                += -V classoption:cleardoublepage=empty
 OPTIONS                += -V classoption:clearpage=empty
