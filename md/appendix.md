@@ -16,6 +16,8 @@ Einfach den Bibtex-Key mit einem `@` davor in eckigen Klammern schreiben: Aus `[
 Mit Seiten- oder Kapitelangabe: Aus `[@Dietz2018, Seite 111]` oder `[@Dietz2018, Kapitel 111]` wird
 [@Dietz2018, Seite 111] oder [@Dietz2018, Kapitel 111] ...
 
+Mehrere Zitate können mit **;** gruppiert werden: Aus `[@Dietz2018;@Meiners2016]` wird [@Dietz2018;@Meiners2016].
+
 Pandoc (bzw. `pandoc-citeproc`) nutzt per Default den *Chicago Manual of Style*-Stil^[vgl.
 [pandoc.org/MANUAL.html#citations](https://pandoc.org/MANUAL.html#citations)].
 Für andere Zitierstile (etwa numerisch oder als Fußnote) sind auf [zotero.org/styles](https://www.zotero.org/styles)
